@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { StuinfoController } from './stuinfo.controller';
 import { TypegooseModule } from 'nestjs-typegoose'
-import { Stuinfo } from './stuinfo.model';
+import { Stuinfo } from '../libs/models/stuinfo.model';
 
 @Module({
   imports:[

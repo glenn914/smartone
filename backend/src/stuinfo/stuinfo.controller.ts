@@ -1,5 +1,5 @@
-import { Controller, Get, Post, Body, Put, Param, Delete } from '@nestjs/common';
-import { Stuinfo } from './stuinfo.model';
+import { Controller } from '@nestjs/common';
+import { Stuinfo } from '../libs/models/stuinfo.model';
 import { Crud } from 'nestjs-mongoose-crud';
 import { InjectModel } from 'nestjs-typegoose';
 import { ModelType } from '@typegoose/typegoose/lib/types';

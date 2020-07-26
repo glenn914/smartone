@@ -8,7 +8,7 @@ import axios from 'axios'
 Vue.config.productionTip = false
 
 Vue.prototype.$http = axios.create({
-  // baseURL: 'http://localhost:5000/'
+  // baseURL: 'http://localhost:80/'
   baseURL: process.env.VUE_APP_API_URL || '/'
 })
 
