@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <h3>new 222222</h3>
     <router-view></router-view>
   </div>
 </template>
@@ -15,6 +14,7 @@ import { Component, Vue } from 'vue-property-decorator';
   },
 })
 export default class App extends Vue {}
+
 </script>
 
 <style>

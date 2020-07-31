@@ -1,15 +1,16 @@
 import { Controller } from '@nestjs/common';
-import { Crud } from 'nestjs-mongoose-crud';
+import { Crud } from 'nestjs-mongoose-crud'
+import { UserInfo } from 'libs/models/userinfo.model';
 import { ApiTags } from '@nestjs/swagger';
 import { InjectModel } from 'nestjs-typegoose';
 import { ModelType } from '@typegoose/typegoose/lib/types';
-import { UserInfo } from '../libs/models/userinfo.model';
+
 
 @Crud({
   model: UserInfo
 })
 @Controller('userinfo')
-@ApiTags('系统用户增删改查')
+@ApiTags('用户管理')
 export class UserinfoController {
   constructor(
     @InjectModel(UserInfo) private readonly model: ModelType<UserInfo>

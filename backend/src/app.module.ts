@@ -5,6 +5,7 @@ import { StuinfoModule } from './stuinfo/stuinfo.module';
 import { TypegooseModule } from 'nestjs-typegoose';
 import { UserinfoModule } from './userinfo/userinfo.module';
 
+
 @Module({
   imports: [
     TypegooseModule.forRoot("mongodb://localhost/smartone-db",{
@@ -14,7 +15,7 @@ import { UserinfoModule } from './userinfo/userinfo.module';
       useFindAndModify:false
     }),
     StuinfoModule,
-    UserinfoModule
+    UserinfoModule,
   ],
   controllers: [AppController],
   providers: [AppService],

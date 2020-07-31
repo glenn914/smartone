@@ -18,7 +18,7 @@
     </el-aside>
     <el-container>
       <el-header height="">
-        系统后台管理
+        <!-- 后台管理界面 -->
         <!-- Header content -->
       </el-header>
       <el-main height="">
@@ -37,17 +37,16 @@ export default class Main extends Vue {
   menu = {
     items: [
       {
-        title: '项目管理',
+        title: 'Project Manage',
         items: [
-          {title:'国际免午',path:'/projects/lfc'},
-          {title:'助学金',path:'/projects/list'},
+          {title:'Lunch for children',path:'/projects/lfc'},
+          {title:'Scholarship',path:'/projects/scholarship'},
         ]
       },
        {
-        title: '账户管理',
+        title: 'User Manage',
         items: [
-          {title:'机构用户',path:'/users/list'},
-          {title:'其他用户',path:'/users/list'},
+          {title:'User List',path:'/users/manage'}
         ]
       }
     ]

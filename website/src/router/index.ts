@@ -13,8 +13,10 @@ Vue.use(VueRouter)
     path: '/',
     component: ()=> import('../views/Main.vue'),
     children:[
-      {name:'home',path:'/',component:()=> import('../views/Home.vue')},
-      {name:"国际免午",path:"/projects/lfc",component:()=> import('../views/projects/LFC.vue')}
+      {name:'home',path:"/",component:()=> import('../views/Home.vue')},
+      {name:"lunchforchildre",path:"/projects/lfc",component:()=> import('../views/projects/LFC.vue')},
+      {name:'jaingxuejin',path:'/projects/scholarship',component:()=> import('../views/projects/Scholarship.vue')},
+      {name:'usercreate',path:'/users/manage',component:()=> import('../views/users/UserCRUD.vue')},
     ]
   }
 ]

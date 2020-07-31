@@ -1,6 +1,5 @@
 <template>
 <div>
-   <h3>国际免午项目</h3>
   <avue-crud :data="data.data" 
   :option= "option"
   @row-save= "create"
@@ -18,10 +17,17 @@ export default class LFC extends Vue{
   data={};
   
   option = {
+    
+    title:'表格的标题',
+    addBtnText:'Create',
+    editBtnText:'Edit',
+    delBtnText:'Delete',
+    excelBtnText:'Excel',
+    excelBtn:true,
     column: [
-      {prop:"stuName", label: "姓名"},
-      {prop:"stuAge", label: "年龄"},
-      {prop:"stuClass", label: "班级"}
+      {prop:"stuName", label: "Name"},
+      {prop:"stuAge", label: "Age"},
+      {prop:"stuClass", label: "Class"}
     ]
   }
 

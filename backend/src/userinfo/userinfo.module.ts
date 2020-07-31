@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { UserinfoController } from './userinfo.controller';
 import { TypegooseModule } from 'nestjs-typegoose';
-import { UserInfo } from '../libs/models/userinfo.model';
+import { UserInfo } from 'libs/models/userinfo.model';
 
 @Module({
   imports:[
