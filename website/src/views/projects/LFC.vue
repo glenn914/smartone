@@ -8,7 +8,8 @@
   >
   <template  slot="menuLeft">
       <el-button type="primary" size="small" @click="downLoadTemplate">下载模板</el-button> 
-      <el-upload  action="/stuinfo/upload" accept="*.csv">
+      <el-upload  action="/stuinfo/upload" accept="*.csv" :on-success="fetch">
+      <!-- <el-upload  action="http://localhost/stuinfo/upload" accept="*.csv" :on-success="fetch">  -->
         <el-button size="small" type="primary">批量上传</el-button>
       </el-upload>
   </template>
