@@ -39,7 +39,8 @@ export default class Main extends Vue {
       {
         title: 'Project Manage',
         items: [
-          {title:'Lunch for children',path:'/projects/lfc'},
+          {title:'Home Page',path:'/'},
+          {title:'Lunch for children',path:'/projects/lfc/SchoolBrief'},
           {title:'Scholarship',path:'/projects/scholarship'},
         ]
       },

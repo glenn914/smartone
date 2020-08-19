@@ -16,10 +16,14 @@ async function bootstrap() {
     .setTitle('API接口调试')
     .setDescription('The API description')
     .setVersion('1.0')
+    .addBearerAuth()
     .build();
   const document = SwaggerModule.createDocument(app, options);
   SwaggerModule.setup('api-docs', app, document);
 
-  await app.listen(80);
+  //使用.env里的参数
+  const PORT = process.env.SERVER_PORT || 80
+  await app.listen(PORT);
+  console.log(`http://localhost:${PORT}/api-docs`)
 }
 bootstrap();
