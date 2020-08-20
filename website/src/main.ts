@@ -30,20 +30,20 @@ axios.interceptors.request.use(
     return Promise.reject(err);
 });
 
-router.beforeEach((to, from, next) => {
-  if (to.path === '/login') {
-     next();
-  } else {// 每次页面跳转执行，token或openId錯誤，均提示跳转到首页
-     let token = sessionStorage.getItem('token');
-     if (token === null || token === '' || token === undefined) {
-        setTimeout(function () {
-           next('/login');
-        },1000)
-     }else{
-        next();
-     }
-  }
-});
+// router.beforeEach((to, from, next) => {
+//   if (to.path === '/login') {
+//      next();
+//   } else {// 每次页面跳转执行，token或openId錯誤，均提示跳转到首页
+//      let token = sessionStorage.getItem('token');
+//      if (token === null || token === '' || token === undefined) {
+//         setTimeout(function () {
+//            next('/login');
+//         },1000)
+//      }else{
+//         next();
+//      }
+//   }
+// });
 
 new Vue({
   router,
