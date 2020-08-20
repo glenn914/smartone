@@ -47,7 +47,8 @@ export default class Main extends Vue {
        {
         title: 'User Manage',
         items: [
-          {title:'User List',path:'/users/manage'}
+          {title:'User List',path:'/users/manage'},
+          {title:'Logout',path:'/login'}
         ]
       }
     ]

@@ -28,8 +28,8 @@ export default class Login extends Vue{
   model={}
   async login(){
     const res = await this.$http.post('auth/login',this.model)
-    console.log(res.data)
-    localStorage.token = res.data.token
+    // console.log(res.data)   //打印token 
+    sessionStorage.token = res.data.token
     this.$router.push('/')
     this.$message.success('Login success')
   }

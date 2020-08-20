@@ -1,10 +1,11 @@
 <template>
   <div>
     <template>
+      <!-- action="http://localhost/stuinfo/upload" -->
       <!-- action="/stuinfo/upload"-->
       <el-upload
         :show-file-list="false"
-        action="http://localhost/stuinfo/upload"
+        action="/stuinfo/upload"
         accept="*.csv"
         :on-success="finish"
       >
