@@ -1,6 +1,6 @@
 <template>
   <div>
-    Home Page
+    <iframe class="iframe" scrolling=no src="http://www.dbsa-dream.com/" frameborder="0"></iframe>
   </div>
 </template>
 
@@ -14,5 +14,8 @@ export default class Home extends Vue{
 </script>
 
 <style>
-
+.iframe{
+  height: 100vh;
+  width: 100%;
+}
 </style>

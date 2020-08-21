@@ -10,6 +10,7 @@ async function bootstrap() {
 
   app.enableCors()
   app.useStaticAssets('admin', { prefix: '/admin' }); 
+  app.useStaticAssets('libs/img', { prefix: '/img' });//前面的libs/img是路径，后面的前缀表示访问libs/img里面的文件用什么前缀
     
  
   const options = new DocumentBuilder()

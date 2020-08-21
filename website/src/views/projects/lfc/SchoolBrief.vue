@@ -18,7 +18,7 @@
       <el-col :span="6" v-for="item in schoolList" :key="item" :offset="1">
         <el-card>
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Uganda_People%27s_Defence_Force_emblem.svg/1200px-Uganda_People%27s_Defence_Force_emblem.svg.png"
+            src="/img/dbsa_1.jpg"
             class="image"
           />
           <div style="padding: 14px;">

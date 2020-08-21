@@ -8,14 +8,7 @@ import axios from 'axios'
 
 Vue.config.productionTip = false
 
-// Vue.prototype.$http = axios.create({
-//   // baseURL: 'http://localhost:80/'
-//   baseURL: process.env.VUE_APP_API_URL || '/'
-
-// })
-
-Vue.prototype.$http = axios
-Vue.prototype.$httpajax = axios
+const http = axios
 axios.defaults.baseURL = process.env.VUE_APP_API_URL || '/'
 // http request 拦截器
 axios.interceptors.request.use(
@@ -29,6 +22,9 @@ axios.interceptors.request.use(
   err => {
     return Promise.reject(err);
 });
+Vue.prototype.$http = http
+Vue.prototype.$httpajax = http
+
 
 router.beforeEach((to, from, next) => {
   if (to.path === '/login') {

@@ -22,7 +22,7 @@ export default class UserCRUD extends Vue{
     delBtnText:'Delete',
     column: [
       {prop:"username", label: "Username"},
-      {prop:"password", label: "Password"},
+      {prop:"password", label: "Password",type:'password',hide: true},
       {prop:"usertype", label: "Usertype", type:"select",dicData:[
         {label:'AdminUser',value:'admin'},
         {label:'NormalUser',value:'normal_user'}
@@ -65,7 +65,7 @@ export default class UserCRUD extends Vue{
 
   async fetch(){
     const res = await this.$http.get('userinfo')
-    this.data = res.data
+    this.data = res
   }
 
   created(){
