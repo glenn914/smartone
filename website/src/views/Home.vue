@@ -1,6 +1,6 @@
 <template>
   <div>
-    <iframe class="iframe" scrolling=no src="http://www.dbsa-dream.com/" frameborder="0"></iframe>
+    HOME PAGE
   </div>
 </template>
 
